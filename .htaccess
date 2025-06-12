@@ -1,0 +1,11 @@
+RewriteEngine on
+
+RewriteRule ^.{0}$ root.php
+
+RewriteRule ^ajout$ view/ajout.php
+RewriteRule ^ajouter$ root.php?action=ajout
+RewriteRule ^liste$ root.php?action=liste 
+RewriteRule ^admin$ view/admin/admine.php
+
+ErrorDocument 404 http://localhost/mvc/er404.html
+
